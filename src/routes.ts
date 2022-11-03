@@ -1,37 +1,24 @@
 import { Router } from 'express';
-// import { colorController } from './controller/ColorsController';
-// import { userController } from './controller/UserController';
+import { ammosController } from './controller/AmmosController';
+import { armorsController } from './controller/ArmorsController';
+import { script } from './controller/ScriptDB';
 
 
 const routes = Router();
 
-// /**
-//  * @User routes
-//  */
+/**
+ * @Ammos routes
+ */
 
-// routes.post('/users', userController.createUser);
+routes.get('/ammos', ammosController.getAmmos);
 
-// routes.get('/users', userController.getUsers);
+/**
+ * @Armors routes
+ */
 
-// routes.get('/users/:id', userController.getUserById);
+routes.get('/armors', armorsController.getArmors);
 
-// routes.delete('/users/:id', userController.deleteUserById);
-
-// routes.get('/users/active/:id', userController.activeAccount);
-
-
-// /**
-//  * @Color routes
-//  */
-
-// routes.post('/color', colorController.createColor);
-
-// routes.get('/colors', colorController.getColors);
-
-// routes.get('/color/:id', colorController.getColorsById);
-
-// routes.delete('/colors/:id', colorController.deleteColorById);
-
-// routes.get('/colors/random', colorController.getRandomColors);
+routes.get('/script', script.getDatabase);
 
 export default routes;
+

@@ -12,18 +12,24 @@ export class Armors {
     @Column()
         image: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         description: string;
 
     @Column()
         category: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         dmgNegation: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         resistance: string;
 
-    @Column()
+    @Column({type: "decimal", precision: 5, scale: 2, default: 0})
         weight: number;
 }

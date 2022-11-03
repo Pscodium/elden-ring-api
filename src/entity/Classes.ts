@@ -12,10 +12,14 @@ export class Classes {
     @Column()
         image: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         description: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         stats: string;
 
 }

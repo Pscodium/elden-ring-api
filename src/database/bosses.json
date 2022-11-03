@@ -327,7 +327,7 @@
     "description": "A formidable, dexterous fighter skilled in melee combat.",
     "location": "Stormhill Evergaol,, Stormveil Castle,, Auriza Hero's Grave",
     "drops": "['2100 Runes', 'Aspects of the Crucible: Tail', '1500 Runes', 'Aspects of the Crucible: Horns']",
-    "healthPoints": "Stormhill Evergaol:, 2750"
+    "healthPoints": "Stormhill Evergaol - 2750"
   },
   {
     "id": "17f699200d2l0i1uqbs9w1ijmp2ner",
@@ -337,7 +337,7 @@
     "description": "Huge humanoid-like creature located at the underground caves of Uhl Palace Ruins",
     "location": "Ainsel River",
     "drops": "['12000 Runes', 'Frozen Lightning Spear']",
-    "healthPoints": "≈4372"
+    "healthPoints": "4372"
   },
   {
     "id": "17f69bf3366l0i1uqds10qc8exqn1ik",
@@ -347,7 +347,7 @@
     "description": "A massive in size, two-headed dragon capable of immense acts of annihilation.",
     "location": "Crumbling Farum Azula",
     "drops": "['280000 Runes', 'Remembrance of the Dragonlord']",
-    "healthPoints": "≈26651"
+    "healthPoints": "26651"
   },
   {
     "id": "17f699dadfbl0i1uqmgi50oii11eaj",
@@ -397,7 +397,7 @@
     "description": "A massive quadruped with a long spiky tail and a head reminiscent of a centipede's, with massive mandibles protruding from its face. It behaves much like a bull and appears to have seismic powers, allowing it to control the earth within its chamber.",
     "location": "Sellia Crystal Tunnel, Caelid, Altus Plateau",
     "drops": "['7,600 Runes', \"Somberstone Miner's Bell Bearing (1)\", 'Smithing Stone (7) x 5', 'Somber Smithing Stone (6)', 'Gravity Stone Chunk x 4']",
-    "healthPoints": "≈8000"
+    "healthPoints": "8000"
   },
   {
     "id": "17f69c5a361l0i1urf5b4r5s5cf125",
@@ -427,7 +427,7 @@
     "description": "A feared-by-most massive dragon located within the Dragon-Burnt Ruins in Limgrave",
     "location": "Limgrave, Dragon-Burnt Ruins",
     "drops": "['5000 Runes', 'Dragon Heart']",
-    "healthPoints": "≈3200"
+    "healthPoints": "3200"
   },
   {
     "id": "17f69ba1aa7l0i1us08w3dodkoeju",
@@ -457,7 +457,7 @@
     "description": "A humanoid with heavy armor and a massive axe.",
     "location": "Gaol Cave",
     "drops": "['6700 Runes', 'Putrid Corpse Ashes']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f699fafc0l0i1usmk2s2oybvx44a",
@@ -467,7 +467,7 @@
     "description": "A massive, menacing reptile that poses a remarkable threat.",
     "location": "Mt. Gelmir",
     "drops": "['See Rykard, Lord of Blasphemy']",
-    "healthPoints": "≈30439"
+    "healthPoints": "30439"
   },
   {
     "id": "17f6953dec4l0i1uso41jlanmo9c4v",
@@ -487,7 +487,7 @@
     "description": "A powerful and devastating dragon, a menace for all type of fighters.",
     "location": "Liurnia of The Lakes",
     "drops": "['120,000 Runes', \"Adula's Moonblade\", '3x Dragon Heart', 'No Runes']",
-    "healthPoints": "≈11550"
+    "healthPoints": "11550"
   },
   {
     "id": "17f69c4aefal0i1usvodp9osviy7v",
@@ -517,7 +517,7 @@
     "description": "I've given thee courtesy enough. Now I fight as Hoarah Loux. Warrior!",
     "location": "Leyndell, Capital of Ash",
     "drops": "['300,000  Runes', 'Remembrance of Hoarah Loux']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f697d2396l0i1utcv9km3qxcnt6m",
@@ -527,7 +527,7 @@
     "description": "Physical form of Godfrey, First Elden Lord",
     "location": "Leyndell, Royal Capital",
     "drops": "['80,000 Runes', 'Talisman Pouch']",
-    "healthPoints": "≈7099"
+    "healthPoints": "7099"
   },
   {
     "id": "17f6953f0d5l0i1uthl5j30bc50wdo",
@@ -569,7 +569,7 @@
     "description": "Immense bird skeleton with crow-like features. Rushes to battle from above while wielding a giant spear.",
     "location": "Mountaintops of the Giants",
     "drops": "['77,000 Runes', 'Death Ritual Spear', '18,000 Runes', \"Death' Poker\"]",
-    "healthPoints": "≈2750"
+    "healthPoints": "2750"
   },
   {
     "id": "17f69b45618l0i1uuc1z6qlw7hnnq",
@@ -579,7 +579,7 @@
     "description": "The apostles, one said to serve Destined Death, are wielders of the god-slaying black flame. But after their defeat by Maliketh, the Black Blade, the source of their power was sealed away.",
     "location": "Altus Plateau, Caelid",
     "drops": "['14,000 Runes', 'Godskin Peeler', 'Scouring Black Flame', '94,000 Runes', 'Godskin Apostle Hood', 'Godskin Apostle Robe', 'Godskin Apostle Bracers', 'Godskin Apostle Trousers', '70,000 Runes', 'Godskin Swaddling Cloth', 'Black Flame Ritual']",
-    "healthPoints": "≈10,000"
+    "healthPoints": "10,000"
   },
   {
     "id": "17f69814439l0i1uuifby3b0bn9gs",
@@ -589,7 +589,7 @@
     "description": "The most aggresive of the Godskin.",
     "location": "Spiritcaller's Cave,Volcano Manor,",
     "drops": "['70,000 Runes', 'Godskin Swaddling Cloth', 'Black Flame Ritual', '50,000 Runes', 'Godskin Stitcher', 'Noble Presence']",
-    "healthPoints": "≈10,000"
+    "healthPoints": "10,000"
   },
   {
     "id": "17f69bf253bl0i1uuma3733w2zwodm",
@@ -609,7 +609,7 @@
     "description": "A dragon wyrm with immense power.",
     "location": "North of Albinauric Rise in Mountaintops of the Giants",
     "drops": "['180,000 Runes', 'Dragon Heart x3']",
-    "healthPoints": "≈35,000"
+    "healthPoints": "35,000"
   },
   {
     "id": "17f695022a1l0i1uv9aohy5ip9yh9f",
@@ -629,7 +629,7 @@
     "description": "Large, prawn-like creatures skilled at melee combat. Its Pest's Glaive poses a menace when wielded by these agile beings.",
     "location": "Mt. Gelmir",
     "drops": "['10000 Runes', \"Kindred of Rot's Exultation\"]",
-    "healthPoints": "≈4000"
+    "healthPoints": "4000"
   },
   {
     "id": "17f69cbe6cbl0i1uvgek1x2hoimz99",
@@ -649,7 +649,7 @@
     "description": "A complementing pair of creatures extremely well versed in dual-battling. These beings achieve an exceptionally balance in combat, resulting in a devastating synergy.",
     "location": "Crumbling Farum Azula",
     "drops": "['170000 Runes', \"Smithing-Stone Miner's Bell Bearing [4]\", 'Ash of War: Black Flame Tornado']",
-    "healthPoints": "≈24,000"
+    "healthPoints": "24,000"
   },
   {
     "id": "17f69b5bcb4l0i1uvn888e99evsdgh",
@@ -659,7 +659,7 @@
     "description": "Large, prawn-like creatures skilled at melee combat. Its Pest's Glaive poses a menace when wielded by these agile beings.",
     "location": "Seethewater Cave",
     "drops": "['10000 Runes', \"Kindred of Rot's Exultation\"]",
-    "healthPoints": "≈4000"
+    "healthPoints": "4000"
   },
   {
     "id": "17f69644c82l0i1uw7sqlk2v4b6bfg",
@@ -679,7 +679,7 @@
     "description": "Massive four winged black dragon with the ability to wield lightning.",
     "location": "Deeproot Depths",
     "drops": "['90000 Runes', 'Remembrance of the Lichdragon']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f69a078e0l0i1uwdp4xqjq6cpbxl",
@@ -689,7 +689,7 @@
     "description": "A huge ogre-looking creature that has a large pumpkin helmet worn on its head. It wields a massive flail and seems to be guarding something or someone against intruders.",
     "location": "Waypoint Ruins, Limgrave, Caelem Ruins, Caelid",
     "drops": "['6300 Runes']",
-    "healthPoints": "≈10,500"
+    "healthPoints": "10,500"
   },
   {
     "id": "17f69bfa759l0i1uwfa0yrdvzcov1i",
@@ -709,7 +709,7 @@
     "description": "The Lion Guardian of Stormveil has been coerced into service by cruel means",
     "location": "Stormveil Castle",
     "drops": "['2350']",
-    "healthPoints": "≈2350"
+    "healthPoints": "2350"
   },
   {
     "id": "17f69a48308l0i1ux3rigvv37tx84f",
@@ -719,7 +719,7 @@
     "description": "...Heed my words. I am Malenia. Blade of Miquella. And I have never known defeat.",
     "location": "Elphael, Brace of the Haligtree",
     "drops": "[\"Malenia's Great Rune\", 'Remembrance of the Rot Goddess', '480,000 Runes']",
-    "healthPoints": "≈26,128"
+    "healthPoints": "26,128"
   },
   {
     "id": "17f69dbf58cl0i1ux7vft8wsk6ejbb",
@@ -729,7 +729,7 @@
     "description": "O, Death. Become my blade once more.",
     "location": "Crumbling Farum Azula",
     "drops": "['220,000 Runes', 'Other Drops', 'Remembrance of the Black Blade']",
-    "healthPoints": "≈10620"
+    "healthPoints": "10620"
   },
   {
     "id": "17f699a40dfl0i1ux9v66kv7dyxcqx",
@@ -749,7 +749,7 @@
     "description": "An eccentric being capable of taking a comprehensive shape of its adversary, ranging from body features to armament.",
     "location": "Nokron, Eternal City",
     "drops": "['10000 Runes', 'Larval Tear x2', 'Silver Tear Mask']",
-    "healthPoints": "≈19,536"
+    "healthPoints": "19,536"
   },
   {
     "id": "17f698a5648l0i1uxs5sk4eq7dy3vh",
@@ -759,7 +759,7 @@
     "description": "The Lord of Frenzied Flame.",
     "location": "Cave of the Forlorn in Mountaintops of the Giants",
     "drops": "['93000 Runes', 'Golden Order Greatsword']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f697f4363l0i1uy2tk9e7g2jqcu",
@@ -769,7 +769,7 @@
     "description": "Welcome, honored guest. To the birthplace of our Dynasty!",
     "location": "Mohgwyn Palace",
     "drops": "['420,000 Runes', \"Mohg's Great Rune\", 'Remembrance of the Blood Lord']",
-    "healthPoints": "≈38,848"
+    "healthPoints": "38,848"
   },
   {
     "id": "17f69a3b2f2l0i1uy2usy0fea155ms",
@@ -789,7 +789,7 @@
     "description": "Aggressive Fire Wyrm guarding the entrance to Altus Plains from any who attempt to bypass the lift",
     "location": "Ruin-Strewn Precipice",
     "drops": "['24000 Runes', \"Magma Wyrm's Scalesword\", '72000 Runes', 'Dragon Heart']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f69d237f0l0i1uytr06ed4gz92qdj",
@@ -819,7 +819,7 @@
     "description": "Imposing knight figure atop a dark steed, wielding a large flail or halberd.",
     "location": "Many",
     "drops": "['2400 Runes', 'Ash of War: Repeating Thrust', '3400 Runes', 'Ash of War: Barricade Shield', '5600 Runes', 'Ash of War: Ice Spear', '8500 Runes', 'Ash of War: Poison Moth Flight', '10000 Runes', 'Ash of War: Phantom Slash', '36000 Runes', 'Ash of War: Phantom Slash', '42000 Runes', \"Ash of War:Bloodhound's Step\", '84000 Runes', \"Night's Calvary Set\"]",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f69a1be26l0i1uz1kl2dyuibof4d",
@@ -829,7 +829,7 @@
     "description": "An omninous figure wielding two serrated swords.",
     "location": "Village of the Albinaurics, Volcano Manor, Perfumer's Grotto",
     "drops": "['4900 Runes', 'Crucible Knot Talisman', '8400 Runes', 'Great Omenkiller Cleaver', 'Great Omenkiller Cleaver']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f69a36cf8l0i1uz6gmzy0dr777k",
@@ -849,7 +849,7 @@
     "description": "A long range spellcaster complemented by an armored, short-distance warrior.",
     "location": "Unsightly Catacombs, Mt. Gelmir",
     "drops": "['9400 Runes', 'Other Drops']",
-    "healthPoints": "≈1024"
+    "healthPoints": "1024"
   },
   {
     "id": "17f699ad704l0i1uzmqfup4jxyto7",
@@ -859,7 +859,7 @@
     "description": "Grave Wardens protect the secrets of the ancients, but the corruption of the land has affected them too",
     "location": "Consecrated Snowfield Catacombs, Consecrated Snowfield.",
     "drops": "['78,000 Runes', 'Great Grave Glovewort', 'Rotten Gravekeeper Cloak']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f697e343bl0i1uznxx67p026exqf",
@@ -879,7 +879,7 @@
     "description": "A blood-rotted tree that has found life despite the death that consumes it.",
     "location": "War-Dead Catacombs",
     "drops": "['67,200 Runes ', 'Redmane Knight Ogha Spirit Ashes', 'Golden Seed']",
-    "healthPoints": "≈18091"
+    "healthPoints": "18091"
   },
   {
     "id": "17f69bc8bd6l0i1v03619u4s9j9ql",
@@ -889,7 +889,7 @@
     "description": "Lord Radagon was a great champion, possessed of flowing red locks. He came to these lands at the head of a great golden host, when he met Lady Rennala in battle. He soon repented his territorial transgressions though, and became husband to the Carian Queen. However. When Godfrey, first Elden Lord, was hounded from the Lands Between, Radagon left Rennala to return to the Erdtree Capital, becoming Queen Marika's second husband and King Consort. Taking the title... of second Elden Lord.",
     "location": "Elden Throne",
     "drops": "['N/A']",
-    "healthPoints": "≈13339"
+    "healthPoints": "13339"
   },
   {
     "id": "17f6992c3e3l0i1v0af3d14p4dcgzx",
@@ -899,7 +899,7 @@
     "description": "Fierce guardian and protector of its master, even when it has long left.",
     "location": "Raya Lucaria Academy, Liurnia of the Lakes",
     "drops": "['14000 Runes', 'Memory Stone']",
-    "healthPoints": "≈2204"
+    "healthPoints": "2204"
   },
   {
     "id": "17f69cf967fl0i1v0cmt73nix34p0c",
@@ -909,7 +909,7 @@
     "description": "A ferocious red wolf with large fangs and blistering speed.",
     "location": "Gelmir Hero's Grave",
     "drops": "['21000 Runes', 'Bloodhound Knight Floh']",
-    "healthPoints": "≈3238"
+    "healthPoints": "3238"
   },
   {
     "id": "17f69ae5092l0i1v0k714w3s2jz8tj",
@@ -919,7 +919,7 @@
     "description": "A spirit glowing in pale blue light, suspended in the air and taking the shape of a huge deer.",
     "location": "Nokron, Eternal City",
     "drops": "['24000 Runes', 'Remembrance of the Regal Ancestor']",
-    "healthPoints": "≈6301"
+    "healthPoints": "6301"
   },
   {
     "id": "17f69b19e80l0i1v0x2eima4yhdbd",
@@ -929,7 +929,7 @@
     "description": "The eternal guardian of Caria Manor fervently defends her domain atop the Royal Moongazing Grounds. Loretta uses her greatbow to rain destruction on all who would dare approach the estate grounds.",
     "location": "Caria Manor",
     "drops": "['10,000 Runes', \"Loretta's Greatbow\", \"Ash of War: Loretta's Slash\"]",
-    "healthPoints": "≈4214"
+    "healthPoints": "4214"
   },
   {
     "id": "17f69de0562l0i1v105zzs817wea9m",
@@ -939,7 +939,7 @@
     "description": "An obscene and disturbing abomination, blend of a spider-like creature and human limbs resulting in a quite resourceful fighter at close range.",
     "location": "Kingsrealm Ruins, Liurnia of the Lakes",
     "drops": "['3,100 Runes']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f699179aal0i1v13n497m1yhps2s",
@@ -969,7 +969,7 @@
     "description": "A troll like scavenger with an insatiable taste for blood.",
     "location": "Morne Tunnel",
     "drops": "['2000 Runes', 'Rusted Anchor']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f69ca8b2al0i1v1pg987jdl4cd68",
@@ -979,7 +979,7 @@
     "description": "Sir Gideon Ofnir, now far from the books and immersed in battle.",
     "location": "Leyndell, Capital of Ash",
     "drops": "['180,000 Runes', 'All-Knowing Helm', 'All-Knowing Armor', 'All-Knowing Gauntlets', 'All-Knowing Greaves', 'Scepter of the All-Knowing']",
-    "healthPoints": "≈6226"
+    "healthPoints": "6226"
   },
   {
     "id": "17f6982dbf7l0i1v1r3i4p5cy7kvcs",
@@ -989,7 +989,7 @@
     "description": "An esteemed high rank soldier, who wields a massive sword and wears his armor proudly.",
     "location": "Stranded Graveyard",
     "drops": "['400 Runes', '2000 Runes (NG+1)']",
-    "healthPoints": "≈10,464"
+    "healthPoints": "10,464"
   },
   {
     "id": "17f6987c932l0i1v1t55h6j6fm1l83",
@@ -999,7 +999,7 @@
     "description": "The ultimate Spiritcaller.",
     "location": "Road's End CatacombsSpiritcaller's Cave",
     "drops": "['3000 Runes', 'Glintstone Sorcerer Ashes ', '170000 Runes', \"Smithing-Stone Miner's Bell Bearing [4]\", 'Ash of War: Black Flame Tornado']",
-    "healthPoints": "≈2200"
+    "healthPoints": "2200"
   },
   {
     "id": "17f69dc74fdl0i1v1wz3qrzn19aps8",
@@ -1009,7 +1009,7 @@
     "description": "General Radahn is cursed ever to wander. Eaten from the inside, by Malenia's scarlet rot, his Wits are long gone. Now he gathers the corpses of former friends and foes alike, gorging on them, like a dog.",
     "location": "Caelid",
     "drops": "['70,000 Runes', \"Remembrance of the Starscourge, Radahn's Great Rune\"]",
-    "healthPoints": "≈25,856"
+    "healthPoints": "25,856"
   },
   {
     "id": "17f6968dcfal0i1v1y8dnaop27j5qg",
@@ -1019,7 +1019,7 @@
     "description": "Tibia Mariner is a spectral sailor capable of calling forth the aid of undead Skeleton creatures and is mainly found at northeast Summonwater Village in Limgrave, near the limits with Caelir. This is an optional boss as players must not defeat it in order to advance to the Legacy Dungeon.",
     "location": "Summonwater Village, Liurnia of The Lakes, Wyndham Ruins",
     "drops": "['2400 Runes', 'Deathroot', 'Skeletal Militiaman Ashes', '4700 Runes', 'Deathroot', 'Skeletal Bandit Ashes', 'Deathroot', \"Tibia's Summons\"]",
-    "healthPoints": "≈2750"
+    "healthPoints": "2750"
   },
   {
     "id": "17f69621aadl0i1v2f5fkvee5z6719",
@@ -1029,7 +1029,7 @@
     "description": "A corrupted and deformed tree that lurks in Mt. Gelmir.",
     "location": "Mt. Gelmir",
     "drops": "['18,000 Runes', 'Leaden Hardtear', 'Cerulean Hidden Tear']",
-    "healthPoints": "≈17,428"
+    "healthPoints": "17,428"
   },
   {
     "id": "17f697500cal0i1v2hh14qewvbrwrn",
@@ -1039,7 +1039,7 @@
     "description": "Just like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
     "location": "Siofra Aqueduct",
     "drops": "['30000 Runes', '32000 Runes', \"Gargoyle's Greatsword\", \"Gargoyle's Twinblade\"]",
-    "healthPoints": "≈9,120"
+    "healthPoints": "9,120"
   },
   {
     "id": "17f696a35c3l0i1v2k2s30hlu2y50j",
@@ -1059,6 +1059,6 @@
     "description": "The heavily armored and highly decorated sentinel protects the tree. Who would dare oppose him?",
     "location": "Limgrave road",
     "drops": "['3200 Runes', '16000 Runes (NG+1)', 'Golden Halberd', 'Erdtree Greatshield', \"Hero's Rune [1]\"]",
-    "healthPoints": "≈1954"
+    "healthPoints": "1954"
   }
 ]

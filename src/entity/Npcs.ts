@@ -12,7 +12,9 @@ export class Npcs {
     @Column()
         image: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         quote: string;
 
     @Column()
