@@ -12,7 +12,9 @@ export class Incantations {
     @Column()
         image: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         description: string;
 
     @Column()

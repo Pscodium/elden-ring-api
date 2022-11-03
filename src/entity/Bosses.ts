@@ -15,16 +15,20 @@ export class Bosses {
     @Column()
         region: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         description: string;
 
     @Column()
         location: string;
 
-    @Column()
+    @Column({
+        length: 2000
+    })
         drops: string;
 
-    @Column()
-        healthPoints: number;
+    @Column('varchar')
+        healthPoints: string;
 
 }

@@ -1,27 +1,30 @@
 import { AppDataSource } from "../data-source";
 import { Request, Response } from "express";
 import { Ammos } from "../entity/Ammos";
+// import * as ammosJson from "../database/ammos.json";
 
 class AmmosController {
 
     private ammoRepository = AppDataSource.getRepository(Ammos);
 
-    // async all(request: Request, response: Response, next: NextFunction) {
-    //     return this.ammoRepository.find()
-    // }
+    getAmmos = async (req: Request, res: Response) => {
+        const ammos = await this.ammoRepository.find();
 
-    // async one(request: Request, response: Response, next: NextFunction) {
-    //     return this.ammoRepository.findOne(request.params.id)
-    // }
+        // for (const ammo in ammosJson) {
+        //     console.log(ammosJson[ammo])
+        //     const obj = {
+        //         name: ammosJson[ammo].name,
+        //         image: ammosJson[ammo].image,
+        //         description: ammosJson[ammo].description,
+        //         type: ammosJson[ammo].type,
+        //         attackPower: ammosJson[ammo].attackPower,
+        //         passive: ammosJson[ammo].passive
+        //     };
+        //     await this.ammoRepository.save(obj)
+        // }
 
-    // async save(request: Request, response: Response, next: NextFunction) {
-    //     return this.ammoRepository.save(request.body)
-    // }
-
-    // async remove(request: Request, response: Response, next: NextFunction) {
-    //     let userToRemove = await this.userRepository.findOneBy({ id: request.params.id })
-    //     await this.ammoRepository.remove(userToRemove)
-    // }
+        return res.json(ammos);
+    };
 
 }
 
