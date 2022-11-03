@@ -21,7 +21,9 @@ export class Ammos {
     @Column()
         attackPower: string;
 
-    @Column()
+    @Column({
+        default: '-'
+    })
         passive: string;
 
 }
