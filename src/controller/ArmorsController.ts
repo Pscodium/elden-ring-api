@@ -10,21 +10,18 @@ class ArmorsController {
     getArmors = async (req: Request, res: Response) => {
         const armors = await this.armorRepository.find();
 
-        // for (const item in jsonItem) {
-        //     console.log(jsonItem[item])
-        //     const obj = {
-        //         name: jsonItem[item].name,
-        //         image: jsonItem[item].image,
-        //         description: jsonItem[item].description,
-        //         category: jsonItem[item].category,
-        //         dmgNegation: jsonItem[item].dmgNegation,
-        //         resistance: jsonItem[item].resistance,
-        //         weight: jsonItem[item].weight
-        //     };
-        //     await this.armorRepository.save(obj)
-        // }
-
         return res.json(armors);
+    };
+
+    getArmorById = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+        const armor = await this.armorRepository.findOne({where: {id: id}});
+
+        if (armor === null) {
+            return res.status(404).json({ message: "This armor id does not exist." });
+        }
+
+        return res.json(armor);
     };
 
 }

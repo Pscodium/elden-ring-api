@@ -10,20 +10,44 @@ class AmmosController {
     getAmmos = async (req: Request, res: Response) => {
         const ammos = await this.ammoRepository.find();
 
-        // for (const ammo in ammosJson) {
-        //     console.log(ammosJson[ammo])
-        //     const obj = {
-        //         name: ammosJson[ammo].name,
-        //         image: ammosJson[ammo].image,
-        //         description: ammosJson[ammo].description,
-        //         type: ammosJson[ammo].type,
-        //         attackPower: ammosJson[ammo].attackPower,
-        //         passive: ammosJson[ammo].passive
-        //     };
-        //     await this.ammoRepository.save(obj)
-        // }
-
         return res.json(ammos);
+    };
+
+    getAmmoById = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const ammo = await this.ammoRepository.findOne({ where: { id: id }});
+
+        if ( ammo === null ) {
+            return res.status(404).json({ message: "This ammo id does not exist." });
+        }
+
+        return res.json(ammo);
+    };
+
+    createAmmo = async (req: Request, res: Response) => {
+        const ammoBody = req.body;
+
+        if (
+            !ammoBody.name ||
+            !ammoBody.image ||
+            !ammoBody.description ||
+            !ammoBody.type ||
+            !ammoBody.attackPower) {
+            return res.status(404).json({ message: "fill in the fields name, image, description, type, attackPower." });
+        }
+
+        const ammo = await this.ammoRepository.save(ammoBody);
+
+        return res.json(ammo);
+    };
+
+    deleteAmmoById = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        await this.ammoRepository.delete(id);
+
+        return res.json({ message: "ammo sucessfully deleted." });
     };
 
 }
