@@ -51,7 +51,7 @@ class Script {
     private talismansRepository = AppDataSource.getRepository(Talismans);
     private weaponsRepository = AppDataSource.getRepository(Weapons);
 
-    getDatabase = async (req: Request, res: Response) => {
+    getDatabase = async () => {
 
         console.log('filling the table ammos');
 

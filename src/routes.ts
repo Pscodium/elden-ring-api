@@ -1,118 +1,120 @@
 import { Router } from 'express';
-import { ammosController } from './controller/AmmosController';
-import { armorsController } from './controller/ArmorsController';
-import { ashesController } from './controller/AshesController';
-import { bossesController } from './controller/BossesController';
+import { inventoryController } from './controller/InventoryController';
+import { magicController } from './controller/MagicController';
+import { enemiesController } from './controller/EnemiesController';
 import { classesController } from './controller/ClassesController';
-import { creaturesController } from './controller/CreaturesController';
-import { incantationsController } from './controller/IncantationsController';
-import { itemsController } from './controller/ItemsController';
 import { locationsController } from './controller/LocationsController';
 import { npcsController } from './controller/NpcsController';
-import { shieldsController } from './controller/ShieldsController';
-import { sorceriesController } from './controller/SorceriesController';
-import { spiritsController } from './controller/SpiritsController';
-import { talismansController } from './controller/TalismansController';
-import { weaponsController } from './controller/WeaponsController';
 // import { script } from './controller/ScriptDB';
 
 
 const routes = Router();
 
 /**
- * @Ammos routes
- */
-
-routes.get('/ammos', ammosController.getAmmos);
-routes.get('/ammo/:id', ammosController.getAmmoById);
-routes.post('/ammo', ammosController.createAmmo);
-routes.delete('/ammo/:id', ammosController.deleteAmmoById);
-
-/**
- * @Armors routes
- */
-
-routes.get('/armors', armorsController.getArmors);
-
-/**
- * @Ashes routes
- */
-
-routes.get('/ashes', ashesController.getAshes);
-
-/**
- * @Bosses routes
- */
-
-routes.get('/bosses', bossesController.getBosses);
-
-/**
- * @Classes routes
+ * @ClassesController {controller}
+ *
+ * @Classes {Route}
  */
 
 routes.get('/classes', classesController.getClasses);
+routes.get('/class/:id', classesController.getClassesById);
+routes.delete('/class/:id', classesController.deleteClassById);
 
 /**
- * @Creatures routes
+ * @EnemiesController {controller}
+ *
+ * @Bosses {Route}
+ * @Creatures {Route}
  */
 
-routes.get('/creatures', creaturesController.getCreatures);
+routes.get('/bosses', enemiesController.getBosses);
+routes.get('/boss/:id', enemiesController.getBossById);
+routes.delete('/boss/:id', enemiesController.deleteBossById);
+
+routes.get('/creatures', enemiesController.getCreatures);
+routes.get('/creature/:id', enemiesController.getCreatureByid);
+routes.delete('/creature/:id', enemiesController.deleteCreatureById);
+
 
 /**
- * @Incantations routes
+ * @InventoryController {controller}
+ *
+ * @Ammo {Route}
+ * @Armor {Route}
+ * @Item {Route}
+ * @Shield {Route}
+ * @Weapon {Route}
+ * @Talisman {Route}
  */
 
-routes.get('/incantations', incantationsController.getIncantations);
+routes.get('/ammos', inventoryController.getAmmos);
+routes.get('/ammo/:id', inventoryController.getAmmoById);
+routes.delete('/ammo/:id', inventoryController.deleteAmmoById);
+
+routes.get('/armors', inventoryController.getArmors);
+routes.get('/armor/:id', inventoryController.getArmorById);
+routes.delete('/armor/:id', inventoryController.deleteArmorById);
+
+routes.get('/items', inventoryController.getItems);
+routes.get('/item/:id', inventoryController.getItemById);
+routes.delete('/item/:id', inventoryController.deleteItemById);
+
+routes.get('/shields', inventoryController.getShields);
+routes.get('/shield/:id', inventoryController.getShieldById);
+routes.delete('/shield/:id', inventoryController.deleteShieldById);
+
+routes.get('/weapons', inventoryController.getWeapons);
+routes.get('/weapon/:id', inventoryController.getWeaponById);
+routes.delete('/weapon/:id', inventoryController.deleteWeaponById);
+
+routes.get('/talismans', inventoryController.getTalismans);
+routes.get('/talisman/:id', inventoryController.getTalismanById);
+routes.delete('/talisman/:id', inventoryController.deleteTalismanById);
 
 /**
- * @Items routes
- */
-
-routes.get('/items', itemsController.getItems);
-
-/**
+ * @LocationsController {controller}
+ *
  * @Locations routes
  */
 
 routes.get('/locations', locationsController.getLocations);
+routes.get('/location/:id', locationsController.getLocationById);
+routes.delete('/location/:id', locationsController.deleteLocationById);
 
 /**
- * @Npcs routes
+ * @MagicController {controller}
+ *
+ * @Ashes {Route}
+ * @Incantations {Route}
+ * @Sorceries {Route}
+ * @Spirits {Route}
+ */
+
+routes.get('/ashes', magicController.getAshes);
+routes.get('/ashe/:id', magicController.getAsheById);
+routes.delete('/ashe/:id', magicController.deleteAsheById);
+
+routes.get('/incantations', magicController.getIncantations);
+routes.get('/incantation/:id', magicController.getIncantationById);
+routes.delete('/incantation/:id', magicController.deleteIncantationById);
+
+routes.get('/sorceries', magicController.getSorceries);
+routes.get('/sorcerie/:id', magicController.getSorcerieById);
+routes.delete('/sorcerie/:id', magicController.deleteSorcerieById);
+
+routes.get('/spirits', magicController.getSpirits);
+routes.get('/spirit/:id', magicController.getSpiritById);
+routes.delete('/spirit/:id', magicController.deleteSpiritById);
+
+/**
+ * @NpcsController {controller}
+ *
+ * @Npcs {Route}
  */
 
 routes.get('/npcs', npcsController.getNpcs);
-
-/**
- * @Shields routes
- */
-
-routes.get('/shields', shieldsController.getShields);
-
-/**
- * @Sorceries routes
- */
-
-routes.get('/sorceries', sorceriesController.getSorceries);
-
-
-/**
- * @Spirits routes
- */
-
-routes.get('/spirits', spiritsController.getSpirits);
-
-/**
- * @Talismans routes
- */
-
-routes.get('/talismans', talismansController.getTalismans);
-
-/**
- * @Weapons routes
- */
-
-routes.get('/weapons', weaponsController.getWeapons);
-
+routes.get('/npc/:id', npcsController.getNpcById);
+routes.delete('/npc/:id', npcsController.deleteNpcById);
 
 
 export default routes;

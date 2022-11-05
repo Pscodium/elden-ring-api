@@ -29,6 +29,6 @@
       "typeorm": "typeorm-ts-node-commonjs",
       "eslint": "eslint ./src",
       "eslint_fix": "eslint ./src --fix",
-      "migration:create": "npm run typeorm migration:create ./src/migration"
+      "migration:create": "npm run typeorm migration:create -n"
    }
 }
