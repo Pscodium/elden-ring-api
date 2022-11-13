@@ -38,6 +38,19 @@ class EnemiesController {
         return res.json({ message: "Ashe sucessfully deleted."});
     };
 
+    updateAshe = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const ashe = await this.ashesRepository.update(id, req.body);
+
+        if (ashe.affected === 1) {
+            const updatedAshe = await this.ashesRepository.findOne({ where: { id: id }});
+            return res.json(updatedAshe);
+        } else {
+            return res.status(404).json({ message: "Ashe not found"});
+        }
+    };
+
     /**
      * @Incantations routes
      */
@@ -61,6 +74,19 @@ class EnemiesController {
         await this.incantationsRepository.delete(id);
 
         return res.json({ message: "Incantation sucessfully deleted." });
+    };
+
+    updateIncantation = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const incantation = await this.incantationsRepository.update(id, req.body);
+
+        if (incantation.affected === 1) {
+            const updatedIncantation = await this.incantationsRepository.findOne({ where: { id: id }});
+            return res.json(updatedIncantation);
+        } else {
+            return res.status(404).json({ message: "Incantation not found"});
+        }
     };
 
     /**
@@ -88,6 +114,19 @@ class EnemiesController {
         return res.json({ message: "Sorcerie sucessfully deleted." });
     };
 
+    updateSorcerie = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const sorcerie = await this.sorceriesRepository.update(id, req.body);
+
+        if (sorcerie.affected === 1) {
+            const updatedSorcerie = await this.sorceriesRepository.findOne({ where: { id: id }});
+            return res.json(updatedSorcerie);
+        } else {
+            return res.status(404).json({ message: "Sorcerie not found"});
+        }
+    };
+
     /**
      * @Spirits routes
      */
@@ -111,6 +150,19 @@ class EnemiesController {
         await this.spiritsRepository.delete(id);
 
         return res.json({ message: "Spirit sucessfully deleted." });
+    };
+
+    updateSpirit = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const spirit = await this.spiritsRepository.update(id, req.body);
+
+        if (spirit.affected === 1) {
+            const updatedSpirit = await this.spiritsRepository.findOne({ where: { id: id }});
+            return res.json(updatedSpirit);
+        } else {
+            return res.status(404).json({ message: "Spirit not found"});
+        }
     };
 
 }

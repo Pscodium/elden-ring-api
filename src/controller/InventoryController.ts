@@ -46,6 +46,19 @@ class InventoryController {
         return res.json({ message: "Ammo sucessfully deleted." });
     };
 
+    updateAmmo = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const ammo = await this.ammoRepository.update(id, req.body);
+
+        if (ammo.affected === 1) {
+            const updatedAmmos = await this.ammoRepository.findOne({ where: { id: id }});
+            return res.json(updatedAmmos);
+        } else {
+            return res.status(404).json({ message: "Ammo not found"});
+        }
+    };
+
     /**
      * @Armors routes
      */
@@ -74,6 +87,19 @@ class InventoryController {
         return res.json({ message: "Armor sucessfully deleted." });
     };
 
+    updateArmor = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const armor = await this.armorRepository.update(id, req.body);
+
+        if (armor.affected === 1) {
+            const updatedArmor = await this.armorRepository.findOne({ where: { id: id }});
+            return res.json(updatedArmor);
+        } else {
+            return res.status(404).json({ message: "Armor not found"});
+        }
+    };
+
     /**
      * @Items routes
      */
@@ -97,6 +123,19 @@ class InventoryController {
         await this.itemsRepository.delete(id);
 
         return res.json({ message: "Item sucessfully deleted." });
+    };
+
+    updateItem = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const item = await this.itemsRepository.update(id, req.body);
+
+        if (item.affected === 1) {
+            const updatedItem = await this.itemsRepository.findOne({ where: { id: id }});
+            return res.json(updatedItem);
+        } else {
+            return res.status(404).json({ message: "Item not found"});
+        }
     };
 
     /**
@@ -124,6 +163,19 @@ class InventoryController {
         return res.json({ message: "Shield sucessfully deleted." });
     };
 
+    updateShield = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const shield = await this.shieldsRepository.update(id, req.body);
+
+        if (shield.affected === 1) {
+            const updatedShield = await this.shieldsRepository.findOne({ where: { id: id }});
+            return res.json(updatedShield);
+        } else {
+            return res.status(404).json({ message: "Shield not found"});
+        }
+    };
+
     /**
      * @Weapons routes
      */
@@ -149,6 +201,19 @@ class InventoryController {
         return res.json({ message: "Weapon sucessfully deleted." });
     };
 
+    updateWeapon = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const weapon = await this.weaponsRepository.update(id, req.body);
+
+        if (weapon.affected === 1) {
+            const updatedWeapon = await this.weaponsRepository.findOne({ where: { id: id }});
+            return res.json(updatedWeapon);
+        } else {
+            return res.status(404).json({ message: "Weapon not found"});
+        }
+    };
+
     /**
      * @Talismans routes
      */
@@ -172,6 +237,19 @@ class InventoryController {
         await this.talismansRepository.delete(id);
 
         return res.json({ message: "Talisman sucessfully deleted." });
+    };
+
+    updateTalisman = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const talisman = await this.talismansRepository.update(id, req.body);
+
+        if (talisman.affected === 1) {
+            const updatedTalisman = await this.talismansRepository.findOne({ where: { id: id }});
+            return res.json(updatedTalisman);
+        } else {
+            return res.status(404).json({ message: "Talisman not found"});
+        }
     };
 
 }

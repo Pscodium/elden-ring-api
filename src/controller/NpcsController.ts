@@ -28,6 +28,19 @@ class NpcsController {
         return res.json({ message: "Npc sucessfully deleted." });
     };
 
+    updateNpc = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const npc = await this.npcsRepository.update(id, req.body);
+
+        if (npc.affected === 1) {
+            const updatedNpc = await this.npcsRepository.findOne({ where: { id: id }});
+            return res.json(updatedNpc);
+        } else {
+            return res.status(404).json({ message: "Npc not found"});
+        }
+    };
+
 }
 
 export const npcsController = new NpcsController();
