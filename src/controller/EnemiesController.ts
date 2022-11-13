@@ -33,6 +33,19 @@ class EnemiesController {
         return res.json({ message: "Boss sucessfully deleted." });
     };
 
+    updateBoss = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const boss = await this.bossesRepository.update(id, req.body);
+
+        if (boss.affected === 1) {
+            const updatedBoss = await this.bossesRepository.findOne({ where: { id: id }});
+            return res.json(updatedBoss);
+        } else {
+            return res.status(404).json({ message: "Boss not found"});
+        }
+    };
+
     /**
      * @Creatures routes
      */
@@ -56,6 +69,19 @@ class EnemiesController {
         await this.creaturesRepository.delete(id);
 
         return res.json({ message: "Creature sucessfully deleted." });
+    };
+
+    updateCreature = async (req: Request, res: Response) => {
+        const id = Number(req.params.id);
+
+        const creatures = await this.creaturesRepository.update(id, req.body);
+
+        if (creatures.affected === 1) {
+            const updatedCreatures = await this.creaturesRepository.findOne({ where: { id: id }});
+            return res.json(updatedCreatures);
+        } else {
+            return res.status(404).json({ message: "Creature not found"});
+        }
     };
 
 }
