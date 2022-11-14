@@ -40,7 +40,7 @@ class ClassesController {
         } else {
             return res.status(404).json({ message: "Class not found" });
         }
-    }
+    };
 }
 
 export const classesController = new ClassesController();

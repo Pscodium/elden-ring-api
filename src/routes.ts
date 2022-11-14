@@ -5,6 +5,9 @@ import { enemiesController } from './controller/EnemiesController';
 import { classesController } from './controller/ClassesController';
 import { locationsController } from './controller/LocationsController';
 import { npcsController } from './controller/NpcsController';
+import { usersController } from './controller/UsersController';
+import { authController } from './controller/AuthController';
+import authMiddleware from './middlewares/AuthMiddleware';
 // import { script } from './controller/ScriptDB';
 
 
@@ -16,10 +19,10 @@ const routes = Router();
  * @Classes {Route}
  */
 
-routes.get('/classes', classesController.getClasses);
-routes.get('/class/:id', classesController.getClassesById);
-routes.delete('/class/:id', classesController.deleteClassById);
-routes.put('/class/update/:id', classesController.updateClass);
+routes.get('/classes', authMiddleware, classesController.getClasses);
+routes.get('/class/:id', authMiddleware, classesController.getClassesById);
+routes.delete('/class/:id', authMiddleware, classesController.deleteClassById);
+routes.put('/class/update/:id', authMiddleware, classesController.updateClass);
 
 /**
  * @EnemiesController {controller}
@@ -28,15 +31,15 @@ routes.put('/class/update/:id', classesController.updateClass);
  * @Creatures {Route}
  */
 
-routes.get('/bosses', enemiesController.getBosses);
-routes.get('/boss/:id', enemiesController.getBossById);
-routes.delete('/boss/:id', enemiesController.deleteBossById);
-routes.put('/boss/update/:id', enemiesController.updateBoss);
+routes.get('/bosses', authMiddleware, enemiesController.getBosses);
+routes.get('/boss/:id', authMiddleware, enemiesController.getBossById);
+routes.delete('/boss/:id', authMiddleware, enemiesController.deleteBossById);
+routes.put('/boss/update/:id', authMiddleware, enemiesController.updateBoss);
 
-routes.get('/creatures', enemiesController.getCreatures);
-routes.get('/creature/:id', enemiesController.getCreatureByid);
-routes.delete('/creature/:id', enemiesController.deleteCreatureById);
-routes.put('/creatures/update/:id', enemiesController.updateCreature);
+routes.get('/creatures', authMiddleware, enemiesController.getCreatures);
+routes.get('/creature/:id', authMiddleware, enemiesController.getCreatureByid);
+routes.delete('/creature/:id', authMiddleware, enemiesController.deleteCreatureById);
+routes.put('/creatures/update/:id', authMiddleware, enemiesController.updateCreature);
 
 
 /**
@@ -50,35 +53,35 @@ routes.put('/creatures/update/:id', enemiesController.updateCreature);
  * @Talisman {Route}
  */
 
-routes.get('/ammos', inventoryController.getAmmos);
-routes.get('/ammo/:id', inventoryController.getAmmoById);
-routes.delete('/ammo/:id', inventoryController.deleteAmmoById);
-routes.put('/ammos/update/:id', inventoryController.updateAmmo);
+routes.get('/ammos', authMiddleware, inventoryController.getAmmos);
+routes.get('/ammo/:id', authMiddleware, inventoryController.getAmmoById);
+routes.delete('/ammo/:id', authMiddleware, inventoryController.deleteAmmoById);
+routes.put('/ammos/update/:id', authMiddleware, inventoryController.updateAmmo);
 
-routes.get('/armors', inventoryController.getArmors);
-routes.get('/armor/:id', inventoryController.getArmorById);
-routes.delete('/armor/:id', inventoryController.deleteArmorById);
-routes.put('/armor/update/:id', inventoryController.updateArmor);
+routes.get('/armors', authMiddleware, inventoryController.getArmors);
+routes.get('/armor/:id', authMiddleware, inventoryController.getArmorById);
+routes.delete('/armor/:id', authMiddleware, inventoryController.deleteArmorById);
+routes.put('/armor/update/:id', authMiddleware, inventoryController.updateArmor);
 
-routes.get('/items', inventoryController.getItems);
-routes.get('/item/:id', inventoryController.getItemById);
-routes.delete('/item/:id', inventoryController.deleteItemById);
-routes.put('/item/update/:id', inventoryController.updateItem);
+routes.get('/items', authMiddleware, inventoryController.getItems);
+routes.get('/item/:id', authMiddleware, inventoryController.getItemById);
+routes.delete('/item/:id', authMiddleware, inventoryController.deleteItemById);
+routes.put('/item/update/:id', authMiddleware, inventoryController.updateItem);
 
-routes.get('/shields', inventoryController.getShields);
-routes.get('/shield/:id', inventoryController.getShieldById);
-routes.delete('/shield/:id', inventoryController.deleteShieldById);
-routes.put('/shield/update/:id', inventoryController.updateShield);
+routes.get('/shields', authMiddleware, inventoryController.getShields);
+routes.get('/shield/:id', authMiddleware, inventoryController.getShieldById);
+routes.delete('/shield/:id', authMiddleware, inventoryController.deleteShieldById);
+routes.put('/shield/update/:id', authMiddleware, inventoryController.updateShield);
 
-routes.get('/weapons', inventoryController.getWeapons);
-routes.get('/weapon/:id', inventoryController.getWeaponById);
-routes.delete('/weapon/:id', inventoryController.deleteWeaponById);
-routes.put('/weapon/update/:id', inventoryController.updateWeapon);
+routes.get('/weapons', authMiddleware, inventoryController.getWeapons);
+routes.get('/weapon/:id', authMiddleware, inventoryController.getWeaponById);
+routes.delete('/weapon/:id', authMiddleware, inventoryController.deleteWeaponById);
+routes.put('/weapon/update/:id', authMiddleware, inventoryController.updateWeapon);
 
-routes.get('/talismans', inventoryController.getTalismans);
-routes.get('/talisman/:id', inventoryController.getTalismanById);
-routes.delete('/talisman/:id', inventoryController.deleteTalismanById);
-routes.put('/talisman/update/:id', inventoryController.updateTalisman);
+routes.get('/talismans', authMiddleware, inventoryController.getTalismans);
+routes.get('/talisman/:id', authMiddleware, inventoryController.getTalismanById);
+routes.delete('/talisman/:id', authMiddleware, inventoryController.deleteTalismanById);
+routes.put('/talisman/update/:id', authMiddleware, inventoryController.updateTalisman);
 
 /**
  * @LocationsController {controller}
@@ -86,10 +89,10 @@ routes.put('/talisman/update/:id', inventoryController.updateTalisman);
  * @Locations routes
  */
 
-routes.get('/locations', locationsController.getLocations);
-routes.get('/location/:id', locationsController.getLocationById);
-routes.delete('/location/:id', locationsController.deleteLocationById);
-routes.put('/location/update/:id', locationsController.updateLocation);
+routes.get('/locations', authMiddleware, locationsController.getLocations);
+routes.get('/location/:id', authMiddleware, locationsController.getLocationById);
+routes.delete('/location/:id', authMiddleware, locationsController.deleteLocationById);
+routes.put('/location/update/:id', authMiddleware, locationsController.updateLocation);
 
 /**
  * @MagicController {controller}
@@ -100,25 +103,25 @@ routes.put('/location/update/:id', locationsController.updateLocation);
  * @Spirits {Route}
  */
 
-routes.get('/ashes', magicController.getAshes);
-routes.get('/ashe/:id', magicController.getAsheById);
-routes.delete('/ashe/:id', magicController.deleteAsheById);
-routes.put('/ashe/update/:id', magicController.updateAshe);
+routes.get('/ashes', authMiddleware, magicController.getAshes);
+routes.get('/ashe/:id', authMiddleware, magicController.getAsheById);
+routes.delete('/ashe/:id', authMiddleware, magicController.deleteAsheById);
+routes.put('/ashe/update/:id', authMiddleware, magicController.updateAshe);
 
-routes.get('/incantations', magicController.getIncantations);
-routes.get('/incantation/:id', magicController.getIncantationById);
-routes.delete('/incantation/:id', magicController.deleteIncantationById);
-routes.put('/incantation/update/:id', magicController.updateIncantation);
+routes.get('/incantations', authMiddleware, magicController.getIncantations);
+routes.get('/incantation/:id', authMiddleware, magicController.getIncantationById);
+routes.delete('/incantation/:id', authMiddleware, magicController.deleteIncantationById);
+routes.put('/incantation/update/:id', authMiddleware, magicController.updateIncantation);
 
-routes.get('/sorceries', magicController.getSorceries);
-routes.get('/sorcerie/:id', magicController.getSorcerieById);
-routes.delete('/sorcerie/:id', magicController.deleteSorcerieById);
-routes.put('/sorcerie/update/:id', magicController.updateSorcerie);
+routes.get('/sorceries', authMiddleware, magicController.getSorceries);
+routes.get('/sorcerie/:id', authMiddleware, magicController.getSorcerieById);
+routes.delete('/sorcerie/:id', authMiddleware, magicController.deleteSorcerieById);
+routes.put('/sorcerie/update/:id', authMiddleware, magicController.updateSorcerie);
 
-routes.get('/spirits', magicController.getSpirits);
-routes.get('/spirit/:id', magicController.getSpiritById);
-routes.delete('/spirit/:id', magicController.deleteSpiritById);
-routes.put('/spirit/update/:id', magicController.updateSpirit);
+routes.get('/spirits', authMiddleware, magicController.getSpirits);
+routes.get('/spirit/:id', authMiddleware, magicController.getSpiritById);
+routes.delete('/spirit/:id', authMiddleware, magicController.deleteSpiritById);
+routes.put('/spirit/update/:id', authMiddleware, magicController.updateSpirit);
 
 /**
  * @NpcsController {controller}
@@ -126,11 +129,22 @@ routes.put('/spirit/update/:id', magicController.updateSpirit);
  * @Npcs {Route}
  */
 
-routes.get('/npcs', npcsController.getNpcs);
-routes.get('/npc/:id', npcsController.getNpcById);
-routes.delete('/npc/:id', npcsController.deleteNpcById);
-routes.put('/npc/update/:id', npcsController.updateNpc);
+routes.get('/npcs', authMiddleware, npcsController.getNpcs);
+routes.get('/npc/:id', authMiddleware, npcsController.getNpcById);
+routes.delete('/npc/:id', authMiddleware, npcsController.deleteNpcById);
+routes.put('/npc/update/:id', authMiddleware, npcsController.updateNpc);
 
+/**
+ * @UsersController {controller}
+ *
+ * @Users {Route}
+ */
+routes.post('/users', usersController.registerUser);
+routes.post('/auth', authController.authenticate);
+routes.post('/permissions/:id', authMiddleware, usersController.setPermission);
+routes.get('/user/:id', authMiddleware, usersController.getUserData);
+routes.post('/user/role/:id', authMiddleware, usersController.setRole);
+routes.get('/users/checkAuth', authMiddleware, usersController.checkAuth);
 
 export default routes;
 

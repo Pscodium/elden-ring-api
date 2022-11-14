@@ -16,6 +16,8 @@ import { Spirits } from "./entity/Spirits";
 import { Talismans } from "./entity/Talismans";
 import { Weapons } from "./entity/Weapons";
 import * as dotenv from 'dotenv';
+import { Users } from "./entity/Users";
+import { Permission } from "./entity/Permission";
 
 dotenv.config();
 
@@ -28,7 +30,7 @@ export const AppDataSource = new DataSource({
     database: process.env.DB_NAME,
     synchronize: true,
     logging: false,
-    entities: [Ammos, Armors, Ashes, Bosses, Classes, Creatures, Incantations, Items, Locations, Npcs, Shields, Sorceries, Spirits, Talismans, Weapons],
+    entities: [Ammos, Armors, Ashes, Bosses, Classes, Creatures, Incantations, Items, Locations, Npcs, Shields, Sorceries, Spirits, Talismans, Weapons, Users, Permission],
     migrations: [],
     subscribers: [],
 });
