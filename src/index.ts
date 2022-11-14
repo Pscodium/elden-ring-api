@@ -12,7 +12,7 @@ AppDataSource.initialize().then(async () => {
     const allowedOrigins = [process.env.FRONTEND_ORIGIN];
 
     const options: cors.CorsOptions = {
-        origin: allowedOrigins
+        origin: String(allowedOrigins)
     };
 
     const app = express();

@@ -1,5 +1,4 @@
 import { AppDataSource } from "../data-source";
-import { Request, Response } from "express";
 import * as ammosJson from "../database/ammos.json";
 import * as armorJson from "../database/armors.json";
 import * as ashesJson from "../database/ashes.json";
