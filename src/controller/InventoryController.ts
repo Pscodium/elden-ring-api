@@ -150,7 +150,7 @@ class InventoryController {
     getShieldById = async (req: Request, res: Response) => {
         const id = Number(req.params.id);
 
-        const shield = this.shieldsRepository.findOne({ where: { id: id } });
+        const shield = await this.shieldsRepository.findOne({ where: { id: id } });
 
         return res.json(shield);
     };
@@ -226,7 +226,7 @@ class InventoryController {
     getTalismanById = async (req: Request, res: Response) => {
         const id = Number(req.params.id);
 
-        const talisman = this.talismansRepository.findOne({ where: { id: id } });
+        const talisman = await this.talismansRepository.findOne({ where: { id: id } });
 
         return res.json(talisman);
     };

@@ -20,7 +20,7 @@ class EnemiesController {
     getBossById = async (req: Request, res: Response) => {
         const id = Number(req.params.id);
 
-        const boss = this.bossesRepository.findOne({ where: { id: id } });
+        const boss = await this.bossesRepository.findOne({ where: { id: id } });
 
         return res.json(boss);
     };
