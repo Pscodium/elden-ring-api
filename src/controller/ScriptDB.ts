@@ -29,11 +29,16 @@ import { Sorceries } from "../entity/Sorceries";
 import { Spirits } from "../entity/Spirits";
 import { Talismans } from "../entity/Talismans";
 import { Weapons } from "../entity/Weapons";
+import { Categories } from "../entity/Categories";
 
-
+interface CategoryProps {
+    name: string;
+    singularName: string;
+    image: string;
+}
 
 class Script {
-
+    private categoriesRepository = AppDataSource.getRepository(Categories);
     private ammoRepository = AppDataSource.getRepository(Ammos);
     private armorRepository = AppDataSource.getRepository(Armors);
     private asheRepository = AppDataSource.getRepository(Ashes);
@@ -51,6 +56,89 @@ class Script {
     private weaponsRepository = AppDataSource.getRepository(Weapons);
 
     getDatabase = async () => {
+
+        const categoriesArray = [
+            {
+                name: "Ammos",
+                singularName: "Ammo",
+                image: "https://eldenring.fanapis.com/images/ammos/17f69992e40l0i0a7oo1s1bq93kal7.png"
+            },
+            {
+                name: "Armors",
+                singularName: "Armor",
+                image: "https://eldenring.fanapis.com/images/armors/17f6960eae6l0i0nfy8iinlzz27.png"
+            },
+            {
+                name: "Ashes",
+                singularName: "Ashe",
+                image: "https://eldenring.fanapis.com/images/ashes/17f691ddaael0hzndtkuqlxj0gi37d.png"
+            },
+            {
+                name: "Bosses",
+                singularName: "Boss",
+                image: "https://eldenring.fanapis.com/images/bosses/17f69bcc1cdl0i1uoai2hm5tcbuhh2.png"
+            },
+            {
+                name: "Classes",
+                singularName: "Class",
+                image: "https://eldenring.fanapis.com/images/classes/17f69b2dd76l0i32gljr3f62pkzhjo.png"
+            },
+            {
+                name: "Creatures",
+                singularName: "Creature",
+                image: "https://eldenring.fanapis.com/images/creatures/17f69df2d3cl0i6ytiz05kga4oygzh.png"
+            },
+            {
+                name: "Incantations",
+                singularName: "Incantation",
+                image: "https://eldenring.fanapis.com/images/incantations/17f692ee649l0hyntu1vu7cu8wxah.png"
+            },
+            {
+                name: "Items",
+                singularName: "Item",
+                image: "https://eldenring.fanapis.com/images/items/17f69aab07al0i1z1ujum0v02t4lr.png"
+            },
+            {
+                name: "Locations",
+                singularName: "Location",
+                image: "https://eldenring.fanapis.com/images/locations/17f69d83e6bl0i2m8v6af0i4h94ltb.png"
+            },
+            {
+                name: "Npcs",
+                singularName: "Npc",
+                image: "https://eldenring.fanapis.com/images/npcs/17f69de1218l0i2olc1m799deyzbgj.png"
+            },
+            {
+                name: "Shields",
+                singularName: "Shield",
+                image: "https://eldenring.fanapis.com/images/shields/17f6976985el0i124znputjytfizsr.png"
+            },
+            {
+                name: "Sorceries",
+                singularName: "Sorcerie",
+                image: "https://eldenring.fanapis.com/images/sorceries/17f69526839l0hykt29wlkzjaekmfp.png"
+            },
+            {
+                name: "Spirits",
+                singularName: "Spirit",
+                image: "https://eldenring.fanapis.com/images/spirits/17f69dc6c64l0i2rdkqrx6suz8t4k.png"
+            },
+            {
+                name: "Talismans",
+                singularName: "Talisman",
+                image: "https://eldenring.fanapis.com/images/talismans/17f69659808l0i2sphoobyfsfvku2i.png"
+            },
+            {
+                name: "Weapons",
+                singularName: "Weapon",
+                image: "https://eldenring.fanapis.com/images/weapons/17f69b35d86l0i1ongc5nz2ucwimp3.png"
+            },
+        ];
+
+        categoriesArray.map((item: CategoryProps) => {
+            this.categoriesRepository.save(item);
+            console.log(`Category ${item.name} added.`);
+        });
 
         console.log('filling the table ammos');
 

@@ -8,10 +8,18 @@ import { npcsController } from './controller/NpcsController';
 import { usersController } from './controller/UsersController';
 import { authController } from './controller/AuthController';
 import authMiddleware from './middlewares/AuthMiddleware';
+import { categoriesController } from './controller/CategoriesController';
 // import { script } from './controller/ScriptDB';
 
 
 const routes = Router();
+
+/**
+ * @CategoriesController {controller}
+ *
+ * @Category {Route}
+ */
+routes.get('/categories', authMiddleware, categoriesController.getCategories);
 
 /**
  * @ClassesController {controller}
